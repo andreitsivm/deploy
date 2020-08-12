@@ -5,6 +5,14 @@ const instance = axios.create({
 })
 
 export const API = {
+    sendRequest(url,method="Get",data=null,headers={}){
+        return axios({
+            url: url,
+            method: method,
+            data: data,
+            headers: headers
+        })
+    },
     getToken() {
         return instance.get('/token')
 

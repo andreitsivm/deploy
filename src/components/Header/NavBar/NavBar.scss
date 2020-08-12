@@ -1,6 +1,8 @@
 @import "src/custom.scss";
 
-
+.selected{
+  color:#1b4a8a;
+}
 .header__body {
   position: relative;
   z-index: 3;
@@ -27,6 +29,7 @@
       padding-left: 15px;
     }
     .burger__menu {
+      margin-right: 30px;
       position: relative;
       top: 15px;
       width: 20px;
@@ -75,7 +78,14 @@
 
 
 }
+.link{
+  text-decoration: none;
+  color: #000000;
+}
+.link:hover{
+  color: #ef5b4c;
 
+}
 
 
 

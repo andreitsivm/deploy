@@ -1,7 +1,11 @@
 import React from "react";
-import './Banner.scss'
-import Button from "../Button/Button";
 import {useMediaQuery} from "react-responsive/src";
+import './Banner.scss'
+
+
+
+
+
 const Banner = () => {
 
     const isMobile=useMediaQuery({
@@ -22,7 +26,7 @@ const Banner = () => {
                 should be submitted as a link to github/bitbucket repository. Please be patient, we consider and respond to every application that meets minimum requirements.
                 We look forward to your submission. Good luck! The photo has to scale in the banner
                 area on the different screens</p>}</div>
-            <Button className={"primary-btn"} label={"Sing up now"}/>
+                <a id="banner__button" href="#signup"><div className="btn banner__button">Sign up</div></a>
         </div>
     )
 }

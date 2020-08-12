@@ -1,7 +1,7 @@
 import React from "react";
-import image from './../../assets/man-laptop-v1.svg'
+import image from '../../assets/man-laptop-v1.svg'
 import './AboutMe.scss'
-import {useMediaQuery} from "react-responsive/src";
+
 
 const AboutMe = (props) => {
 
@@ -24,7 +24,7 @@ const AboutMe = (props) => {
                             well.
                             Slice service directory page PSD mockup​ into HTML5/CSS3. </p>
                         <div className="button">
-                            <a href="#" className="a-about">Sing up now</a>
+                            <a href="#signup" className="a-about">Sing up now</a>
                         </div>
                     </div>
                 </div>

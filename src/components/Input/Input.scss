@@ -1,0 +1,41 @@
+@import "src/custom";
+.input {
+  font-family:'PT Sans',sans-serif;
+  box-sizing: border-box;
+  width: 330px;
+  height: 40px;
+  font-size: 16px;
+  padding-left: 13px;
+  line-height: 28px;
+  color: #404040;
+  display: inline-block;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background: #fff;
+  @include tablet{
+    width: 468px;
+  }
+}
+.input:focus{
+  outline: #80bdff;
+  border: 1px solid #80bdff ;
+  box-shadow:  0 0 0 3px  rgba(128, 189, 255, 0.2);
+}
+.input.error{
+  border: 1px solid #db3445;
+}
+.input.error:focus {
+  border: 1px solid #db3445;
+  box-shadow: 0 0 0 3px rgba(219, 52, 69, 0.1);
+
+}
+.inputLabel{
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+}
+.inputError{
+  display: block;
+  color:#db3445;
+  font-size: 12px;
+}

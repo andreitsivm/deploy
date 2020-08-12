@@ -53,23 +53,6 @@ $background-color2:#f9f9f3;
   }
 }
 
-input[type=text],input[type=email],input[type=tel],input[type=file] {
-  font-family:'PT Sans',sans-serif;
-  box-sizing: border-box;
-  width: 330px;
-  height: 40px;
-  font-size: 16px;
-  padding-left: 13px;
-  line-height: 28px;
-  color: #404040;
-  display: inline-block;
-  border: 1px solid #ced4da;
-  border-radius: 4px;
-  background: #fff;
-  @include tablet{
-    width: 468px;
-  }
-}
 input[type=radio]{
   font-family: "PT Sans",sans-serif;
   width: 16px;
@@ -77,23 +60,7 @@ input[type=radio]{
   vertical-align: middle;
 }
 
-input:focus {
-  outline: #80bdff;
-  border: 3px solid rgba(128, 189, 255, 0.2);
-}
-label{
-  display: block;
-  font-weight: bold;
-}
 
-a{
-  text-decoration: none;
-  color: #000000;
-}
-a:hover{
-  color: #ef5b4c;
-
-}
 
 
 

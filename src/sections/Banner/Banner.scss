@@ -1,8 +1,8 @@
-@import "./../../custom.scss";
+@import "../../custom";
 
 
 .banner {
-  background-image: url("./../../assets/banner-photo.jpg");
+  background-image: url("../../assets/banner-photo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
@@ -16,7 +16,7 @@
 
 @include mobile {
   .banner {
-    background-image: url("./../../assets/banner_mobile.jpg");
+    background-image: url("../../assets/banner_mobile.jpg");
     background-size: 100%;
     height: 400px;
     display: flex;
@@ -38,7 +38,7 @@
         text-align: center;
       }
     }
-    .primary-btn {
+    .banner__button {
       margin-top: 160px;
     }
   }
@@ -52,7 +52,6 @@
       padding-top: 67px;
       width: 403px;
       height: 118px;
-
       h1 {
         text-align: justify;
       }}
@@ -61,22 +60,19 @@
         height: 135px;
         padding-left: 30px;
         padding-top: 124px;
-
         p {
           text-align: left;
         }
       }
-    .primary-btn {
+    .banner__button {
       margin-top: 160px;
     }
-
   }
 }
 @include desktop {
   .banner {
     height: 600px;
     margin-bottom: 160px;
-
     .title {
       padding-top: 107px;
       width: 501px;
@@ -84,30 +80,31 @@
       padding-left: 30px;
       text-transform: uppercase;
       white-space: nowrap;
-
       h1 {
         text-align: justify;
       }
     }
-
     .simple__text {
       padding-top: 150px;
       width: 551px;
       height: 110px;
       padding-left: 30px;
-
       p {
         text-align: left;
       }
     }
-
-
-    .primary-btn {
+    .banner__button {
       margin-top: 150px;
     }
   }
 }
 
-
-
+#banner__button{
+  text-decoration: none;
+}
+.banner__button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
