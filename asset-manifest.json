@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/deploy/static/css/main.8a8208eb.chunk.css",
+    "main.js": "/deploy/static/js/main.919e3e9b.chunk.js",
+    "main.js.map": "/deploy/static/js/main.919e3e9b.chunk.js.map",
+    "runtime-main.js": "/deploy/static/js/runtime-main.725dcda5.js",
+    "runtime-main.js.map": "/deploy/static/js/runtime-main.725dcda5.js.map",
+    "static/js/2.c1a18349.chunk.js": "/deploy/static/js/2.c1a18349.chunk.js",
+    "static/js/2.c1a18349.chunk.js.map": "/deploy/static/js/2.c1a18349.chunk.js.map",
+    "index.html": "/deploy/index.html",
+    "precache-manifest.e3b395ecac7c456fb6e4dacf3df109a8.js": "/deploy/precache-manifest.e3b395ecac7c456fb6e4dacf3df109a8.js",
+    "service-worker.js": "/deploy/service-worker.js",
+    "static/css/main.8a8208eb.chunk.css.map": "/deploy/static/css/main.8a8208eb.chunk.css.map",
+    "static/js/2.c1a18349.chunk.js.LICENSE.txt": "/deploy/static/js/2.c1a18349.chunk.js.LICENSE.txt",
+    "static/media/Banner.scss": "/deploy/static/media/banner_mobile.79a48893.jpg",
+    "static/media/logo.svg": "/deploy/static/media/logo.146e2926.svg",
+    "static/media/man-laptop-v1.svg": "/deploy/static/media/man-laptop-v1.3cdf7897.svg",
+    "static/media/photo-cover.svg": "/deploy/static/media/photo-cover.3a41f082.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.725dcda5.js",
+    "static/js/2.c1a18349.chunk.js",
+    "static/css/main.8a8208eb.chunk.css",
+    "static/js/main.919e3e9b.chunk.js"
+  ]
+}
