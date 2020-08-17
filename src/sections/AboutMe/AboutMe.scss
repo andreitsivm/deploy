@@ -1,28 +1,30 @@
 @import "../../custom";
 
 .about {
+  padding-top:80px ;
   width: 100%;
   margin-bottom: 150px;
-  .title {
+  .about__title {
+      text-align: center;
+  }
+  .image{
+    text-align: center;
+  }
+  .info{
+    text-align: center;
+  }
+  .info__text{
     margin: 0 auto;
-    align-content: center;
-    white-space: nowrap;
-    h1 {
-      line-height: 50px;
-    }
   }
   .about__info {
-    align-content: center;
     display: flex;
+    align-content: center;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
     padding-top: 68px;
-
     @include tablet {
       flex-direction: row;
     }
-
     .info__title {
       margin-bottom: 24px;
     }

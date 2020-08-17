@@ -10,7 +10,6 @@
   .title{
     text-transform: uppercase;
     white-space: nowrap;
-    padding-left: 30px;
   }
 }
 
@@ -24,22 +23,20 @@
     align-items: center;
     justify-content: center;
     .title {
-      padding-top: 67px;
       width: 300px;
       height: 90px;
-      h1 {
-        text-align: center;
-      }}
+      text-align: center;
+      }
     .simple__text {
       width: 330px;
       height: 65px;
-      padding-top: 80px;
+      padding-top: 20px;
       p {
         text-align: center;
       }
     }
     .banner__button {
-      margin-top: 160px;
+      margin-top: 80px;
     }
   }
 }
@@ -52,9 +49,9 @@
       padding-top: 67px;
       width: 403px;
       height: 118px;
-      h1 {
-        text-align: justify;
-      }}
+      white-space: nowrap;
+      padding-left: 30px;
+      }
       .simple__text {
         width: 450px;
         height: 135px;
@@ -74,15 +71,8 @@
     height: 600px;
     margin-bottom: 160px;
     .title {
-      padding-top: 107px;
       width: 501px;
       height: 146px;
-      padding-left: 30px;
-      text-transform: uppercase;
-      white-space: nowrap;
-      h1 {
-        text-align: justify;
-      }
     }
     .simple__text {
       padding-top: 150px;

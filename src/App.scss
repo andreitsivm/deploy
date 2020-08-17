@@ -48,7 +48,9 @@ $background-color2:#f9f9f3;
     flex: 0 0 auto;
     min-height: 20px;
     color: gray;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 10px;
   }
 }

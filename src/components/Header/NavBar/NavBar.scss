@@ -1,21 +1,14 @@
 @import "src/custom.scss";
 
-.selected{
-  color:#1b4a8a;
-}
+
 .header__body {
   position: relative;
   z-index: 3;
   display: flex;
   justify-content: space-between;
   height: 40px;
-  .logo {
-    padding-top: 20px;
-    padding-left: 30px;
     .img {
-      display: inline;
-    }
-  }
+      display: inline;}
   li {
     list-style: none;
     display: inline-block;
@@ -23,13 +16,12 @@
 }
 @media (max-width: 1023px) {
   .header__body {
-    height: 40px;
     .logo{
       padding-top: 10px;
       padding-left: 15px;
     }
     .burger__menu {
-      margin-right: 30px;
+      margin-right: 15px;
       position: relative;
       top: 15px;
       width: 20px;
@@ -62,6 +54,13 @@
 @include tablet{
   .header__body{
     height: 60px;
+    .logo{
+      display: block;
+      margin: auto 0;
+      padding-left: 30px;
+      padding-top: 5px;
+
+    }
   }
 }
 @include desktop{
@@ -79,14 +78,17 @@
 
 }
 .link{
+
+  font-size: 14px;
   text-decoration: none;
   color: #000000;
 }
 .link:hover{
   color: #ef5b4c;
-
 }
-
+.selected{
+  color:#1b4a8a;
+}
 
 
 

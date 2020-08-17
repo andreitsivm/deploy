@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import {API} from "../../utils/API";
 import {useForm} from "react-hook-form";
 import {useDispatch, useSelector} from "react-redux";
-import {refresh, refreshUsers, startLoading, stopLoading} from "../../redux/actions";
+import {refreshUsers, startLoading, stopLoading} from "../../redux/actions";
 import {setMessage, openModal} from "../../redux/modal-reducer";
 import Button from "../../components/Button/Button";
 import RadioBtn from "../../components/RadioBtn/RadioBtn";
@@ -11,11 +11,11 @@ import Input from "../../components/Input/Input";
 import "./Form.scss"
 
 
-/* eslint-disable no-underscore-dangle*/
+// eslint-disable next-line
 const phoneRegExp = /^[\\+]{0,1}380([0-9]{9})$/;
-
+// eslint-disable next-line
 const emailRegExp = /^(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])$/;
-/* eslint-enable*/
+
 
 const Form = () => {
 
@@ -156,8 +156,7 @@ const Form = () => {
                                         handleImageChange={handleImageChange}
                                         errors={!!errors.photo&&errors.photo.message}/>
                         </div>
-                        <div className="div-btn">
-                        <Button disabled={loading} type={'submit'}>Sign Up</Button></div>
+                        <Button disabled={loading} type={'submit'}>Sign Up</Button>
                     </form>
                 </div>
             </div>

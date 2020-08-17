@@ -54,8 +54,6 @@ const SideBar = () => {
 
     return (
         <div className="side-menu">
-
-
             <div className="menu_block">
                 <ul>
                     <li>

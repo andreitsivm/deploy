@@ -1,11 +1,11 @@
 @import "../../custom";
 .card {
-  flex: 0 0 100%;
+  flex: 0 0 auto;
   @include tablet{
     flex: 0 0 33%;
   }
   box-sizing: border-box;
-  height: 320px;
+  //height: 320px;
   display: flex;
   flex-direction: column;
   text-align: center;

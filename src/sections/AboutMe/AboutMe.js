@@ -8,7 +8,7 @@ const AboutMe = (props) => {
 
     return (
         <div className=" about" id="about">
-            <div className="title"><h1>Let's get acquainted</h1></div>
+            <div className="about__title"><h1>Let's get acquainted</h1></div>
             <div className="about__info">
                 <div className='image'>
                     <img id="img" src={image} alt="man with laptop"/>

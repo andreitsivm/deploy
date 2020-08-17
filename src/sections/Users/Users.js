@@ -4,7 +4,7 @@ import "./Users.scss"
 
 import {API} from "../../utils/API";
 import {useDispatch, useSelector} from "react-redux";
-import {refreshUsers, setNextUrl, setPrevUrl, setUsers, startLoading, stopLoading} from "../../redux/actions";
+import {setNextUrl, setPrevUrl, setUsers, startLoading, stopLoading} from "../../redux/actions";
 import {useMediaQuery} from "react-responsive/src";
 import UserCard from "../../components/UserCard/UserCard";
 import Button from "../../components/Button/Button";

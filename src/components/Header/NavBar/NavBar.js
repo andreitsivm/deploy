@@ -22,12 +22,12 @@ const NavBar = (props) => {
 
     const MENU_ITEMS = [
         {
-            title: "About Me",
+            title: "About me",
             path: "/about"
         },
         {
-            title: "Relationship",
-            path: "/relationship"
+            title: "Relationships",
+            path: "/relationships"
         },
         {
             title: "Requirements",
@@ -46,7 +46,7 @@ const NavBar = (props) => {
 
     return (
         <nav className='header__body'>
-            {isMenuActive ? <SideBar/> : null}
+            {isMenuActive ? <SideBar /> : null}
             <div className='logo'>
                 <div className='img'><img src={logo} alt="Logo"/></div>
             </div>
