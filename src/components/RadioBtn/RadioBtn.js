@@ -11,9 +11,9 @@ const RadioBtn = ({positions, inputRef, formChangeHandler, name, errors}) => {
         "radio_label",
     )
     return (<>
-            <div className={`radio ${!!errors && "error"}`}>
+            <div className="radio">
                 <label className={classes}>Select your position</label>
-                <div>
+                <div className={`radio-container ${!!errors && "error"}`}>
                     {positions.map((position, index) => {
                         return (
                             <div key={index} className="radio_btn">

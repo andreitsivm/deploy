@@ -1,7 +1,4 @@
-/* для элемента input c type="radio" */
-.radio-btn{
-  position: relative;
-}
+
 .custom-radio {
   position: absolute;
   width: 20px;
@@ -44,6 +41,7 @@
   border-color: #b3d7ff;
 }
 
+
 /* стили для радиокнопки, находящейся в фокусе */
 .custom-radio:focus+label::before {
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
@@ -53,29 +51,21 @@
 .custom-radio:focus:not(:checked)+label::before {
   border-color: #80bdff;
 }
-
 /* стили для радиокнопки, находящейся в состоянии checked */
 .custom-radio:checked+label::before {
   border-color: #0b76ef;
   background-color: #0b76ef;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
 }
-
 /* стили для радиокнопки, находящейся в состоянии disabled */
 .custom-radio:disabled+label::before {
   background-color: #e9ecef;
 }
-
-
-
-.radio.error{
-    border: 1px solid #db3445;
-  border-radius: 5px;
-}
-
-
-
-
+//.radio-container.error{
+//  width: 100%;
+//    border: 1px solid #db3445;
+//  border-radius: 5px;
+//}
 .radio {
   display: flex;
   flex-direction: column;
