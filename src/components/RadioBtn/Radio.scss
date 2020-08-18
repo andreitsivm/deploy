@@ -68,31 +68,25 @@
 
 
 
+.radio.error{
+    border: 1px solid #db3445;
+  border-radius: 5px;
+}
 
 
 
 
+.radio {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 5px;
+  .radio_label{
+    padding-bottom: 20px;
+  }
+  .radio-item__label{
+    font-size: 16px;
+    font-family: "Open Sans",sans-serif;
+  }
+}
 
-//.radio {
-//  display: flex;
-//  flex-direction: column;
-//  align-items: start;
-//  .radio_label{
-//    padding-bottom: 20px;
-//  }
-//  .radio__btn {
-//    margin-bottom: 5px;
-//    label {
-//      padding-left: 10px;
-//      display: inline-block;
-//      font-weight: normal;
-//      font-family: 'PT Sans',sans-serif;
-//    }
-//  }
-//}
-//input[type=radio]{
-//  font-family: "PT Sans",sans-serif;
-//  width: 16px;
-//  height: 16px;
-//  vertical-align: middle;
-//}
