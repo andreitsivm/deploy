@@ -4,7 +4,7 @@ import AboutMe from "../sections/AboutMe/AboutMe";
 import Users from "../sections/Users/Users";
 import Form from "../sections/Form/Form";
 
-const Content = (props) => {
+const Content = () => {
     return (
         <>
             <Banner/>

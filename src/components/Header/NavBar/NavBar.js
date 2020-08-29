@@ -1,23 +1,25 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import logo from './../../../assets/logo.svg'
 import './NavBar.scss'
-import SideBar from "../../SideBar/SideBar";
 import {useMediaQuery} from "react-responsive/src";
 import {NavLink} from "react-router-dom";
+import {useDispatch} from "react-redux";
+import {toggleSideMenu} from "../../../redux/modal-reducer";
 
 
-const NavBar = (props) => {
-    const [isMenuActive, setActive] = useState(false)
 
+const NavBar = () => {
+    const dispatch=useDispatch()
     function toggleMenu() {
-        setActive(!isMenuActive)
+        dispatch(toggleSideMenu())
+
     }
 
     const isDesktop = useMediaQuery({query: '(min-width:1024px)'})
     const isTabletOrMobile = useMediaQuery({query: "(max-width:1024px)"})
-    useEffect(() => {
-        setActive(false)
-    }, [isDesktop])
+    // useEffect(() => {
+    //     toggleMenu()
+    // }, [isDesktop])
 
 
     const MENU_ITEMS = [
@@ -46,7 +48,6 @@ const NavBar = (props) => {
 
     return (
         <nav className='header__body'>
-            {isMenuActive ? <SideBar /> : null}
             <div className='logo'>
                 <div className='img'><img src={logo} alt="Logo"/></div>
             </div>

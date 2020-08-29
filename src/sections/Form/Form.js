@@ -156,8 +156,10 @@ const Form = () => {
                                         handleImageChange={handleImageChange}
                                         errors={!!errors.photo&&errors.photo.message}/>
                         </div>
-                        <Button disabled={loading} type={'submit'}>Sign Up</Button>
+
                     </form>
+                    <div className="form_button">
+                    <Button disabled={loading} type={'submit'}>Sign Up</Button></div>
                 </div>
             </div>
 

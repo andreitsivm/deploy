@@ -12,7 +12,6 @@
     white-space: nowrap;
   }
 }
-
 @include mobile {
   .banner {
     background-image: url("../../assets/banner_mobile.jpg");
@@ -26,27 +25,27 @@
       width: 300px;
       height: 90px;
       text-align: center;
+      margin-top: -2px;
       }
     .simple__text {
       width: 330px;
       height: 65px;
-      padding-top: 20px;
+      padding-top: 25px;
       p {
         text-align: center;
       }
     }
     .banner__button {
-      margin-top: 80px;
+      margin-top: 60px;
+      margin-left: -10px;
     }
   }
 }
-
 @include tablet {
   .banner {
     height: 500px;
-
     .title {
-      padding-top: 67px;
+      padding-top: 60px;
       width: 403px;
       height: 118px;
       white-space: nowrap;
@@ -56,21 +55,21 @@
         width: 450px;
         height: 135px;
         padding-left: 30px;
-        padding-top: 124px;
+        padding-top: 100px;
         p {
           text-align: left;
         }
       }
     .banner__button {
-      margin-top: 160px;
+      margin-top: 140px;
     }
   }
 }
 @include desktop {
   .banner {
     height: 600px;
-    margin-bottom: 160px;
     .title {
+      padding-top: 107px;
       width: 501px;
       height: 146px;
     }
@@ -88,7 +87,6 @@
     }
   }
 }
-
 #banner__button{
   text-decoration: none;
 }

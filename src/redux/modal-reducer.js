@@ -3,10 +3,12 @@ const OPEN_MODAL="OPEN_MODAL";
 const CLOSE_MODAL= "CLOSE_MODAL";
 const SET_MESSAGE="SET_MESSAGE";
 const CLEAR_MESSAGE="CLEAR_MESSAGE";
+const SIDE_MENU_TOGGLE="SIDE_MENU_TOGGLE"
 
 const initialState={
     modalIsOpen:false,
-    message:null
+    message:null,
+    isSideMenuActive:false
 }
 export const modalReducer=(state=initialState,action)=> {
     switch (action.type) {
@@ -30,12 +32,17 @@ export const modalReducer=(state=initialState,action)=> {
                 ...state,message: null
             }
         }
+        case SIDE_MENU_TOGGLE:{
+            return {
+                ...state,isSideMenuActive: !state.isSideMenuActive
+            }
+        }
         default:{
             return state
         }
     }
 }
-
+export const toggleSideMenu=()=>({type:SIDE_MENU_TOGGLE})
 export const clearMessage=()=>({type:CLEAR_MESSAGE})
 export const openModal=()=>({type:OPEN_MODAL})
 export const closeModal=()=>({type:CLOSE_MODAL})

@@ -27,7 +27,7 @@ const Banner = () => {
                 should be submitted as a link to github/bitbucket repository. Please be patient, we consider and respond to every application that meets minimum requirements.
                 We look forward to your submission. Good luck! The photo has to scale in the banner
                 area on the different screens</p>}</div>
-                <a id="banner__button" href="#signup"><div className="btn banner__button">Sign up</div></a>
+                <a id="banner__button" href="#signup"><div className="btn banner__button">Sign up now</div></a>
         </div>
     )
 }

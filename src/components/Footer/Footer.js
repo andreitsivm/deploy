@@ -1,8 +1,9 @@
 import React from "react";
+import './Footer.scss'
 
 const Footer=(props)=>{
     return(<>
-                &copy; <span>abz.agency specially for the test task</span>
+                 <span className="footer__text">&copy;abz.agency specially for the test task</span>
         </>
     )
 }

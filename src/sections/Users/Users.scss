@@ -1,30 +1,47 @@
 @import "src/custom";
-.users__block{
+
+.users__block {
   background-color: #f9f9f3;
-  margin: 20px auto;
-  @include tablet{padding-bottom: 150px;}
-
-  .users__title{
-    padding-top:35px;
-    @include tablet{
-      padding-top: 150px;
-      margin-bottom: 70px;
-    }
+  margin: 0 auto;
+  .users__title {
     text-align: center;
-    h1{
-    margin-bottom: 25px;}
-
+    h1 {
+      margin-bottom: 25px;
+    }
   }
   .users {
     display: flex;
     flex-wrap: wrap;
-    @include mobile{
+  }
+}
+
+@include mobile {
+  .users__block{
+    padding-bottom: 100px;
+    .users__title{
+      padding-top: 55px;
+    }
+    .users{
       flex-direction: column;
     }
+
   }
+}
+
+@include tablet {
+  .users__block{
+  padding-bottom: 120px;
+    .users__title{
+      padding-top: 115px;
+    }
   }
-.btn-position{
+}
+
+@include desktop {
+
+}
+
+.btn-position {
   display: flex;
   justify-content: center;
-  padding-bottom: 70px;
 }

@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 @import "src/custom";
 .form__block {
-  @include tablet{
+  @include desktop{
     padding-top: 150px;
+  }
+  @include tablet{
+    padding-top: 110px;
   }
 
   width: 100%;
@@ -13,6 +16,9 @@
   .form__title {
     color: #212529;
     text-align: center;
+    @include mobile{
+      padding-top: 90px;
+    }
   }
 
   .form {
@@ -30,4 +36,8 @@
   display: block;
   font-size: 12px;
   color: #212529;
+}
+.form_button{
+  margin-top: 20px;
+  margin-bottom: 10px;
 }

@@ -1,59 +1,22 @@
 import React from "react";
 import './SideBar.scss'
 import {NavLink} from "react-router-dom";
+import Portal from "../Portal/Portal";
+import {useDispatch, useSelector} from "react-redux";
+import {toggleSideMenu} from "../../redux/modal-reducer";
+import logo from "../../assets/logo.svg";
 
 
 const SideBar = () => {
+    const dispatch=useDispatch()
 
-    const SIDE_MENU_ITEMS = [
-        {
-            title: "About Me",
-            path: "/aboutme"
-        },
-        {
-            title: "Relationships",
-            path: "/relationships"
-        },
-        {
-            title: "Users",
-            path: "/users"
-        },
-        {
-            title: "Sign Up",
-            path: "/signup"
-        },
-        {
-            title: "Terms and Conditions",
-            path: "/termsandconditions"
-        },
-        {
-            title: "How it works",
-            path: "/howitworks"
-        },
-        {
-            title: "Partnership",
-            path: "/partnership"
-        },
-        {
-            title: "Help",
-            path: "/help"
-        },
-        {
-            title: "Leave Testimonial",
-            path: "/testimonial"
-        },
-        {
-            title: "Contact us",
-            path: "/contact"
-        },
+    return (<Portal >
+            <div className="menu__overlay"onClick={()=>{dispatch(toggleSideMenu())}} >
 
-
-
-
-    ]
-
-    return (
-        <div className="side-menu">
+        <div className="side-menu" >
+            <div className="logo">
+                <div className='img'><img src={logo} alt="Logo"/></div>
+            </div>
             <div className="menu_block">
                 <ul>
                     <li>
@@ -112,7 +75,7 @@ const SideBar = () => {
                     </li>
                 </ul>
             </div>
-        </div>
+        </div></div></Portal>
     )
 }
 

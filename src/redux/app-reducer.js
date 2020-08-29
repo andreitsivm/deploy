@@ -13,7 +13,8 @@ const initialState = {
     users: [],
     next: null,
     prev: null,
-    trigger:false
+    trigger:false,
+    tooltipContent:null
 }
 export const appReducer = (state = initialState, action) => {
     switch (action.type) {

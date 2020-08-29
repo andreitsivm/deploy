@@ -1,21 +1,15 @@
 @import "../../custom";
 
 .about {
-  padding-top:80px ;
   width: 100%;
-  margin-bottom: 150px;
-  .about__title {
-      text-align: center;
-  }
-  .image{
+  padding-bottom: 95px;
+  .image {
     text-align: center;
   }
-  .info{
-    text-align: center;
-  }
-  .info__text{
+  .info__text {
     margin: 0 auto;
   }
+
   .about__info {
     display: flex;
     align-content: center;
@@ -25,69 +19,95 @@
     @include tablet {
       flex-direction: row;
     }
-    .info__title {
-      margin-bottom: 24px;
+    p {
+      text-align: justify;
     }
-      p {
-        margin-bottom: 36px;
-        text-align: justify;
-      }
-
-
   }
 }
 
 @include mobile {
-  .title {
+  .about__title {
+    text-align: center;
+    padding-top: 70px;
     width: 325px;
     height: 25px;
+    margin-left: 20px;
   }
+
   #img {
     width: 290px;
     height: 250px;
   }
-  .info__text{
-    width: 330px;
-    height: 260px;
+  .info{
+    .info__title{
+      padding-top: 25px;
+      padding-left: 17px;
+    }
+    .info__text {
+      padding-top: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .button{
+      padding-top: 30px;
+      text-align: center;
+    }
   }
+
 
 }
 
 @include tablet {
-  .title {
-    width: 360px;
-    height: 41px;
+  .about__title {
+    text-align: center;
+    padding-top: 115px;
   }
   #img {
     width: 250px;
     height: 210px;
   }
-  .info{
+  .info {
     padding-left: 30px;
-  }
-  .info__text {
-    width: 430px;
-    height: 205px;
+    .info__title {
+      text-align: start;
+    }
+    .info__text {
+      padding-top: 18px;
+      width: 430px;
+      height: 205px;
 
+    }
+  }
+  div.button {
+    padding-top: 25px;
+    text-align: start;
   }
 }
 
 @include desktop {
+  .about {
+    padding-top: 80px;
+    padding-bottom: 155px;
+    .about__title {
+      padding-top: 70px;
+    }
+    #img {
+      width: 340px;
+      height: 285px;
+    }
+    .info {
+      padding-left: 50px;
+    }
+    .info__text {
+      width: 550px;
+      height: 185px;
+      padding-left: 14px;
+    }
 
-  .title {
-    width: 445px;
-    height: 50px;
-  }
-  #img {
-    width: 340px;
-    height: 285px;
-  }
-  .info{
-    padding-left: 50px;
-  }
-  .info__text {
-    width: 550px;
-    height: 185px;
+    div.button {
+      padding-top: 24px;
+      text-align: start;
+    }
   }
 }
 

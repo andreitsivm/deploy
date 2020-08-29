@@ -4,7 +4,7 @@
 @mixin mobile{
   @media (max-width: 767px) {
     .container{
-      min-width: 360px;
+      width: 360px;
     }
     @content
   }

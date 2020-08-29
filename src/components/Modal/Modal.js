@@ -17,13 +17,13 @@ const Modal =()=>{
             {modalIsOpen&&
         <Portal>
         <div>
-            <div className="modal__overlay">
-                <div className="modal__window">
+            <div className="modal__overlay" >
+                <div className="modal__window" onBlur={()=>{dispatch(closeModal())}}>
 
-                    <div className="modal__body">
+                    <div className="modal__body"  >
                         <div className="modal__header">
                             <h1>Congratulations</h1>
-                            <div className="modal-btn" onClick={()=>{closeModal()}}>x</div>
+                            <div className="modal-btn" onClick={()=>{dispatch(closeModal())}}>x</div>
                         </div>
                         <div className="modal__content">{message?<p>{message}</p>:lorem}</div>
                         <div className="modal__footer">

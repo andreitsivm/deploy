@@ -1,0 +1,46 @@
+@import 'src/custom.scss';
+.tooltipWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.targetElement {
+  cursor: pointer;
+}
+
+.tooltip {
+  position: absolute;
+  padding: 0 10px;
+  box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.11);
+  border-radius: 4px;
+  overflow: hidden;
+  color:#fefefe;
+  font-size: 14px;
+  box-sizing: border-box;
+  background-color: #000000;
+  z-index: 9999;
+}
+
+.tooltip.top {
+  bottom: 130%;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.tooltip.bottom {
+  top: 130%;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.tooltip.right {
+  left: 130%;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
+.tooltip.left {
+  right: 130%;
+  transform: translateY(-50%);
+  top: 50%;
+}

@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react";
 
 import "./Users.scss"
-
 import {API} from "../../utils/API";
 import {useDispatch, useSelector} from "react-redux";
 import {setNextUrl, setPrevUrl, setUsers, startLoading, stopLoading} from "../../redux/actions";
@@ -71,7 +70,6 @@ const Users = () => {
     return (<div className="users__block" id="users">
         <div className="users__title"><h1>Our cheerful users</h1>
             <p>Attention! Sorting users by registration date</p></div>
-
         <div className="users">
             <UserCard  users={allUsers}/>
         </div>
